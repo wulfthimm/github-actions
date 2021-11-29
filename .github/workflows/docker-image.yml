@@ -17,4 +17,4 @@ jobs:
         uses: actions/checkout@v2
 
       - name: build container
-        run: docker build -t test ./build/Dockerfile
+        run: docker build -t test $(pwd)/build/Dockerfile
