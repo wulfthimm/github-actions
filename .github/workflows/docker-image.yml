@@ -12,7 +12,9 @@ jobs:
 
     runs-on: self-hosted
 
+    container: ./build/Dockerfile
+
     steps:
       - name: Check Out Repo 
         uses: actions/checkout@v2
-      - uses: ./build/Dockerfile
+
