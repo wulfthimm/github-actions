@@ -16,4 +16,4 @@ jobs:
 
     steps:
       - name: build container
-        run: pwd
+        run: ls -l
