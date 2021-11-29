@@ -21,3 +21,4 @@ jobs:
         env:
           IMAGE_TAG: ${{ github.sha }}
         run: docker build -t namerequired/github-actions:$IMAGE_TAG build/.
+      - run: docker ps -a
