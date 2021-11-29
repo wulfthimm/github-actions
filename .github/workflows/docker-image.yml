@@ -15,4 +15,4 @@ jobs:
     steps:
       - name: Check Out Repo 
         uses: actions/checkout@v2
-      - run: docker ps -a
+      - uses: ./build/Dockerfile
