@@ -15,5 +15,10 @@ jobs:
     container: ubuntu:focal
 
     steps:
+      - name: Check Out Repo 
+        uses: actions/checkout@v2
+
       - name: build container
-        run: ls -l
+        run: pwd
+
+      - run: ls -al
